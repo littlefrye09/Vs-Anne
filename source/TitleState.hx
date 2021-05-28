@@ -295,14 +295,7 @@ class TitleState extends MusicBeatState
 
 			transitioning = true;
 			// FlxG.sound.music.stop();
-			{
-				http.onError = function (error) {
-					trace('error: $error');
-					FlxG.switchState(new MainMenuState()); // fail but we go anyway
-				  }
-				  
-				  http.request();
-			});
+					
 			// FlxG.sound.play(Paths.music('titleShoot'), 0.7);
 				
 				
